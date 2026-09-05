@@ -1,0 +1,8 @@
+{
+  "name": "Agent Bazar",
+  "description": "Autonomous AI-to-AI commerce platform for autonomous B2B procurement, negotiation, Razorpay payment, GST invoicing, and financial reconciliation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
