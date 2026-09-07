@@ -31,7 +31,9 @@ import {
   Network,
   Banknote,
   Printer,
-  BookOpen
+  BookOpen,
+  Download,
+  Image as ImageIcon
 } from 'lucide-react';
 import { Transaction } from '../types';
 import { TredsFactoringHub } from './TredsFactoringHub';
@@ -79,10 +81,11 @@ export const SubmissionKit: React.FC<SubmissionKitProps> = ({
 
 ---
 
-## 🌐 Live Application Deployments
+## 🌐 Live Application Deployment
 
-- **Live Production App**: https://ais-dev-ta3fwmt6hp4qnmdrfcol4y-346292601383.asia-southeast1.run.app
-- **Shared Preview App**: https://ais-pre-ta3fwmt6hp4qnmdrfcol4y-346292601383.asia-southeast1.run.app
+- **🚀 Official Production Application (Permanent Vercel Host)**: https://agent-bazar-zeta.vercel.app/
+- **⚡ Google Cloud Run Shared Preview**: https://ais-pre-ta3fwmt6hp4qnmdrfcol4y-346292601383.asia-southeast1.run.app
+- **🛠️ AI Studio Developer Sandbox**: https://ais-dev-ta3fwmt6hp4qnmdrfcol4y-346292601383.asia-southeast1.run.app
 
 ---
 
@@ -189,6 +192,19 @@ Built with React 19, TypeScript, and Tailwind CSS with mobile-first responsive l
             All evaluative frameworks, TReDS invoice discounting calculator, ONDC & GeM public procurement hub, and statutory 6/6 compliance suites consolidated in one place.
           </p>
         </div>
+
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+          <a
+            href="https://agent-bazar-zeta.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2.5 bg-emerald-500 hover:bg-emerald-600 text-slate-950 rounded-xl text-xs font-bold flex items-center justify-center gap-2 shadow-lg hover:shadow-emerald-500/20 transition-all active:scale-95"
+          >
+            <span className="w-2 h-2 rounded-full bg-slate-950 animate-pulse" />
+            <span>Open Live App (Vercel)</span>
+            <ExternalLink className="w-3.5 h-3.5" />
+          </a>
+        </div>
       </div>
 
       {/* Navigation Sub-Tabs */}
@@ -273,8 +289,8 @@ Built with React 19, TypeScript, and Tailwind CSS with mobile-first responsive l
               : 'text-slate-600 hover:bg-slate-100'
           }`}
         >
-          <Copy className="w-4 h-4" />
-          <span>Text Snippets</span>
+          <ImageIcon className="w-4 h-4" />
+          <span>Thumbnail & Snippets</span>
         </button>
       </div>
 
@@ -464,9 +480,50 @@ Built with React 19, TypeScript, and Tailwind CSS with mobile-first responsive l
         </div>
       )}
 
-      {/* Tab 8: Form Copy Snippets */}
+      {/* Tab 8: Form Copy Snippets & Video Thumbnail */}
       {activeSubTab === 'snippets' && (
         <div className="space-y-6">
+          {/* Video & Media Kit Thumbnail */}
+          <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-4">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div className="flex items-center gap-2">
+                <ImageIcon className="w-4 h-4 text-amber-500" />
+                <div>
+                  <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider">Official Video Thumbnail (16:9 • High Resolution)</h4>
+                  <p className="text-[11px] text-slate-500">Ready for YouTube, Loom, LinkedIn, or hackathon project submission cover</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <a
+                  href="/video_thumbnail.jpg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-2.5 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-all"
+                >
+                  <ExternalLink className="w-3.5 h-3.5" />
+                  <span>View Full Size</span>
+                </a>
+                <a
+                  href="/video_thumbnail.jpg"
+                  download="Agent2Agent_Bazaar_Video_Thumbnail.jpg"
+                  className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 cursor-pointer shadow-xs transition-all active:scale-95"
+                >
+                  <Download className="w-3.5 h-3.5" />
+                  <span>Download Thumbnail</span>
+                </a>
+              </div>
+            </div>
+            
+            <div className="relative rounded-xl overflow-hidden border border-slate-200 shadow-inner bg-slate-900 aspect-video max-w-2xl mx-auto group">
+              <img
+                src="/video_thumbnail.jpg"
+                alt="Agent2Agent Bazaar Official Video Thumbnail"
+                className="w-full h-full object-cover group-hover:scale-[1.01] transition-transform duration-300"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+          </div>
+
           {/* Pitch Snippet 1 */}
           <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-3">
             <div className="flex items-center justify-between">

@@ -14,10 +14,13 @@
 
 ---
 
-## 🌐 Live Application Deployments
+## 🌐 Live Application Deployment
 
-- **Live Production App**: [https://ais-dev-ta3fwmt6hp4qnmdrfcol4y-346292601383.asia-southeast1.run.app](https://ais-dev-ta3fwmt6hp4qnmdrfcol4y-346292601383.asia-southeast1.run.app)
-- **Shared Preview App**: [https://ais-pre-ta3fwmt6hp4qnmdrfcol4y-346292601383.asia-southeast1.run.app](https://ais-pre-ta3fwmt6hp4qnmdrfcol4y-346292601383.asia-southeast1.run.app)
+- **🚀 Official Production Application (Permanent Vercel Host)**: [https://agent-bazar-zeta.vercel.app/](https://agent-bazar-zeta.vercel.app/)
+- **⚡ Google Cloud Run Shared Preview**: [https://ais-pre-ta3fwmt6hp4qnmdrfcol4y-346292601383.asia-southeast1.run.app](https://ais-pre-ta3fwmt6hp4qnmdrfcol4y-346292601383.asia-southeast1.run.app)
+- **🛠️ AI Studio Developer Sandbox**: [https://ais-dev-ta3fwmt6hp4qnmdrfcol4y-346292601383.asia-southeast1.run.app](https://ais-dev-ta3fwmt6hp4qnmdrfcol4y-346292601383.asia-southeast1.run.app)
+
+> **Verified Status**: The Vercel production deployment at `https://agent-bazar-zeta.vercel.app/` is online (HTTP 200), high-speed, and accessible globally without any cookie or session restrictions.
 
 ---
 
